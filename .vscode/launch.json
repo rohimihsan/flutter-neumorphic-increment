@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "neuromorphic",
+            "name": "neumorphic",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "neuromorphic (profile mode)",
+            "name": "neumorphic (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"

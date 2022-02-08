@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.neuromorphic">
+    package="com.example.neumorphic">
    <uses-permission android:name="android.permission.VIBRATE" />
    <application
-        android:label="neuromorphic"
+        android:label="neumorphic"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

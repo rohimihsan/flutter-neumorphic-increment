@@ -1,3 +1,3 @@
-# neuromorphic
+# neumorphic
 
 flutter increment but neuromorphism

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(neuromorphic LANGUAGES CXX)
+project(neumorphic LANGUAGES CXX)
 
-set(BINARY_NAME "neuromorphic")
+set(BINARY_NAME "neumorphic")
 
 cmake_policy(SET CMP0063 NEW)
 
