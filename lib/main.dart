@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:async';
 
 void main() {
@@ -32,6 +33,12 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _isElevated = true;
   bool _resetIsElevated = true;
 
+  @override
+  void initState() {
+    SystemChrome.setEnabledSystemUIOverlays([]);
+    super.initState();
+  }
+
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -60,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       _isElevated = !_isElevated;
                     });
                     _incrementCounter();
-
+                    HapticFeedback.lightImpact();
                     Timer timer =
                         new Timer(new Duration(milliseconds: 200), () {
                       setState(() {
@@ -101,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       _resetIsElevated = !_resetIsElevated;
                       _counter = 0;
                     });
-
+                    HapticFeedback.lightImpact();
                     Timer timer =
                         new Timer(new Duration(milliseconds: 200), () {
                       setState(() {
